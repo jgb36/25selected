@@ -1,9 +1,11 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function Home() {
   return (
+    
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
@@ -14,6 +16,7 @@ export default function Home() {
           height={38}
           priority
         />
+
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
@@ -24,6 +27,16 @@ export default function Home() {
           </li>
           <li className="tracking-[-.01em]">
             Save and see your changes instantly.
+          </li>
+          <li>
+            <Link href = "team" className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
+              <span> About Us</span>
+            </Link>
+          </li>
+          <li>
+            <Link href = "dashboard/profile" className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
+              <span>Dashboard</span>
+            </Link>
           </li>
         </ol>
       </main>
