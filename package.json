@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.2.0",
     "@heroui/navbar": "^2.2.14",
     "@heroui/react": "^2.7.5",
+    "@next/font": "^14.2.15",
     "auth": "^1.2.3",
     "clsx": "^2.1.1",
     "next": "15.2.4",

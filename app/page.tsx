@@ -2,6 +2,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
+import localFont from "next/font/local";
 
 export default function Home() {
   return (
