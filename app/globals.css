@@ -26,3 +26,11 @@ body {
 }
 
 
+@font-face {
+  font-family: "AcademyEngravedLetPlain";
+  src: url("/public/fonts/AcademyEngravedLetPlain.ttf");
+}
+
+.AcademyEngravedLetPlain{
+  font-family: "AcademyEngravedLetPlain";
+}
