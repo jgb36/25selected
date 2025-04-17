@@ -3,12 +3,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
 import localFont from "next/font/local";
+import Hero from "./components/hero"
+export const metadata = {
+  title: "XVSelect Home Page",
+  description: "My description",
+}
 
 export default function Home() {
   return (
     
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <Hero></Hero>
         <Image
           className="dark:invert"
           src="/next.svg"
