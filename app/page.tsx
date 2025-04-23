@@ -20,29 +20,19 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         {/* <Hero /> */}
 
-        <div className={`${Academy.className} flex flex-row items-center leading-none text-black`}>
+        <div className={`${Academy.className} flex flex-row items-center leading-none text-black bg-gray-400`}>
         <Image
           className="dark:invert"
-          src="/25logos/noBG.png"
+          src="/25logos/IG.png"
           alt="Next.js logo"
-          width={120}
-          height={38}
+          width={520}
+          height={50}
           priority
         />
-        <p className="text-[120px]">Select</p>
+        {/* <p className="text-[120px]">Select</p> */}
         </div>
 
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
           <li>
             <Link href = "team" className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
               <span> About Us</span>
