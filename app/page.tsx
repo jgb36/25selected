@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -15,10 +16,22 @@ const Academy = localFont({
 
 export default function Home() {
   return (
-    
+    <>
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      
+      <header className='topHead' id='index'>
+        <Image
+            className = "headerPic"
+            src="/25Logos/IG.png"
+            alt="25 Select Logo"
+            height={50}
+            width={50}
+        />
+      </header>
+      
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         {/* <Hero /> */}
+        
 
         <div className={`${Academy.className} flex flex-row items-center leading-none text-black bg-gray-400`}>
         <Image
@@ -31,7 +44,7 @@ export default function Home() {
         />
         {/* <p className="text-[120px]">Select</p> */}
         </div>
-
+ 
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li>
             <Link href = "team" className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
@@ -49,7 +62,10 @@ export default function Home() {
             </Link>
           </li>
         </ol>
+        
       </main>
+      
+      
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -98,5 +114,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+    </>
   );
 }
