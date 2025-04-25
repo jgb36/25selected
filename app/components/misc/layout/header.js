@@ -19,9 +19,9 @@ const Header = () => {
         <>
           <header
             className={
-              "fixed top-0 w-full  z-100 bg-white-500 transition-all " +
+              "fixed top-0 w-full  z-10 bg-white-500 transition-all height-100 " +
               (scrollActive ? " shadow-md pt-0" : " pt-4")
-            }
+            } id="top"
           >
 
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">

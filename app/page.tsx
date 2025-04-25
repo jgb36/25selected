@@ -18,8 +18,8 @@ const Academy = localFont({
 export default function Home() {
   return (
     <>
+    <Header />
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Header />
       {/* <header className='topHead' id='index'>
         <Image
             className = "headerPic"
@@ -34,7 +34,7 @@ export default function Home() {
         {/* <Hero /> */}
         
 
-        <div className={`${Academy.className} flex flex-row items-center leading-none text-black bg-gray-400`}>
+        <div className={`${Academy.className} flex flex-row items-center leading-none text-black`} id="fullLogo">
         <Image
           className="dark:invert"
           src="/25logos/noBG.png"

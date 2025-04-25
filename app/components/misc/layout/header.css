@@ -1,7 +1,4 @@
-.headerPic{
-    float: left;
-  }
-  
-  #index{
-    float: left;
+  #top{
+    background-color: gray;
+    position: sticky;
   }
