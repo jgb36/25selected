@@ -2,6 +2,7 @@ import "../globals.css";
 //import "../teams.css";
 import "./missions.css"
 import { lusitana } from '@/app/ui/fonts';
+import Header from '../components/misc/layout/header'
 import Image from "next/image";
 import Link from "next/link";
 import localFont from 'next/font/local';
@@ -18,6 +19,7 @@ export const metadata = {
 export default async function Page() {
     return (
       <main>
+        <Header />
         <h1 className={`${Academy.className}  mb-4 text-xl md:text-2xl`} id="mission">
           Our Mission
         </h1>

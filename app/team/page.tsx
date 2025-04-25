@@ -2,6 +2,7 @@ import "../globals.css";
 import "./teams.css";
 import { lusitana } from '@/app/ui/fonts';
 import Image from "next/image";
+import Header from '../components/misc/layout/header'
 import Link from "next/link";
 export const metadata = {
   title: "Meet The Team",
@@ -10,6 +11,8 @@ export const metadata = {
 
 export default async function Page() {
     return (
+      <div className = "header">
+        <Header />
       <main>
         <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`} id="greeting">
           Meet The Team
@@ -88,5 +91,6 @@ export default async function Page() {
         <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
         </div>
       </main>
+      </div>
     );
   }

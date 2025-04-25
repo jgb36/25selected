@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import localFont from 'next/font/local';
 import Hero from  './components/Hero'
+import Header from './components/misc/layout/header'
 export const metadata = {
   title: "XVSelect Home Page",
   description: "My description",
@@ -18,8 +19,8 @@ export default function Home() {
   return (
     <>
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      
-      <header className='topHead' id='index'>
+      <Header />
+      {/* <header className='topHead' id='index'>
         <Image
             className = "headerPic"
             src="/25Logos/IG.png"
@@ -27,7 +28,7 @@ export default function Home() {
             height={50}
             width={50}
         />
-      </header>
+      </header> */}
       
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         {/* <Hero /> */}
@@ -36,13 +37,13 @@ export default function Home() {
         <div className={`${Academy.className} flex flex-row items-center leading-none text-black bg-gray-400`}>
         <Image
           className="dark:invert"
-          src="/25logos/IG.png"
+          src="/25logos/noBG.png"
           alt="Next.js logo"
-          width={520}
-          height={50}
+          width={130}
+          height={60}
           priority
         />
-        {/* <p className="text-[120px]">Select</p> */}
+        <p className="text-[100px]">Select</p>
         </div>
  
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
