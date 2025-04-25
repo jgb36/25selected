@@ -1,7 +1,7 @@
 .teamPeoples{
     columns: 2;
     border-radius: 10px;
-    background: blue;
+    background: green;
     column-fill: balance;
     column-rule: 2px solid black;
     display: inline;
