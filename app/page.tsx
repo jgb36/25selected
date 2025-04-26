@@ -20,20 +20,39 @@ export default function Home() {
     <>
     <Header />
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      {/* <header className='topHead' id='index'>
-        <Image
-            className = "headerPic"
-            src="/25Logos/IG.png"
-            alt="25 Select Logo"
-            height={50}
-            width={50}
-        />
-      </header> */}
-      
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         {/* <Hero /> */}
         
+        <div
+            className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
+            <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
+                Kickstart your future with <strong>XV Select</strong>.
+              </h1>
+              <p className="text-black-500 mt-4 mb-6">
+                Players can get connected to coaches from around the country.
+              </p>
+              <p className="text-black-500 mt-4 mb-6">
+                Coaches can get recruit the best of the best for their teams.
+              </p>
+              <a href="/sign_up">
+                {/* <ButtonPrimary>Join Our Program</ButtonPrimary> */}
+              </a>
 
+            </div>
+            <div className="flex w-full">
+              <div className="h-full w-full">
+                <Image
+                  src="/25logos/IG.png"
+                  alt="AI learning"
+                  quality={100}
+                  width={612}
+                  height={183}
+                  layout="responsive"
+                />
+              </div>
+              </div>
+              </div>
         <div className={`${Academy.className} flex flex-row items-center leading-none text-black`} id="fullLogo">
         <Image
           className="dark:invert"
@@ -45,22 +64,20 @@ export default function Home() {
         />
         <p className="text-[100px]">Select</p>
         </div>
+        
  
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <h2>What we do at <strong>XVSelect</strong></h2>
           <li>
-            <Link href = "team" className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
-              <span> About Us</span>
-            </Link>
+            Learn about recruiting events going on in your area
+            <p></p>
           </li>
           <li>
-            <Link href = "dashboard/profile" className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
-              <span>Dashboard</span>
-            </Link>
+            Help you get in contact with top Rugby coaches across the country
+            <p></p>
           </li>
           <li>
-          <Link href = "/mission" className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
-              <span> Our Mission</span>
-            </Link>
+            Help you kickstart your futures
           </li>
         </ol>
         
