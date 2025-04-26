@@ -4,6 +4,10 @@
   }
 
   #navLink{
-    background-color: green;
-    padding: 1rem;
+    background-color: rgb(0, 128, 0/0.5);
+    margin: 10px;
+  }
+
+  #navLink:hover{
+
   }

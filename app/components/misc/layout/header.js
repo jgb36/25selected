@@ -59,21 +59,21 @@ const Header = () => {
             </LinkScroll> */}
 
           <li>
-            <Link href = "team" id='navLink' className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
+            <Link href = "team" id='navLink' className="flex items-center gap-5 self-start rounded-lg bg-green-500 px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-green-100 md:text-base">
               <span> About Us</span>
             </Link>
           </li>
           <li>
-            <Link href = "dashboard/profile" id='navLink' className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
+            <Link href = "dashboard/profile" id='navLink' className="flex items-center gap-5 self-start rounded-lg bg-green-500 px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-green-100 md:text-base">
               <span>Dashboard</span>
             </Link>
           </li>
           <li>
-          <Link href = "/mission" id='navLink' className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
+          <Link href = "/mission" id='navLink' className="flex items-center gap-5 self-start rounded-lg bg-green-500 px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-green-100 md:text-base">
               <span> Our Mission</span>
             </Link>
           </li>
-          <Link href = "team" id='navLink' className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
+          <Link href = "team" id='navLink' className="flex items-center gap-5 self-start rounded-lg bg-green-500 px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-green-100 md:text-base">
               <span>Pricing</span>
             </Link>
             </ul>
