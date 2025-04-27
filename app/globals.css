@@ -34,3 +34,8 @@ body {
 .AcademyEngravedLetPlain{
   font-family: "AcademyEngravedLetPlain";
 }
+
+#fullLogo
+{
+  background-color: gray;
+}
