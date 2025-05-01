@@ -6,6 +6,7 @@ import Head from 'next/head';
 import localFont from 'next/font/local';
 import Hero from  './components/Hero'
 import Header from './components/misc/layout/header'
+import Feature from './components/Feature'
 export const metadata = {
   title: "XVSelect Home Page",
   description: "My description",
@@ -53,6 +54,7 @@ export default function Home() {
               </div>
               </div>
               </div>
+              <Feature />
         <div className={`${Academy.className} flex flex-row items-center leading-none text-black`} id="fullLogo">
         <Image
           className="dark:invert"
