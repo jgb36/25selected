@@ -1,6 +1,10 @@
 import Header from "../components/misc/layout/header"
 import "./login.css";
 import { lusitana } from '@/app/ui/fonts';
+export const metadata = {
+    title: "Login",
+    description: "My description",
+  }
 
 
 export default function Login() {
